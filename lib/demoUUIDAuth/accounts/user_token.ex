@@ -17,7 +17,7 @@ defmodule DemoUUIDAuth.Accounts.UserToken do
     field :token, :binary
     field :context, :string
     field :sent_to, :string
-    belongs_to :user, DemoUUIDAuth.Accounts.User
+    belongs_to :user, DemoUUIDAuth.Accounts.User, type: :binary_id
 
     timestamps(updated_at: false)
   end
